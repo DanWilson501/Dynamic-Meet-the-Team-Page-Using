@@ -1,23 +1,62 @@
+body {
+  background-color: #1b3c36;
+  color: #e0e0e0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #3e5f58;
+}
+
+h1 {
+  color: #e0e0e0;
 }
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 
 .profile {
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 200px;
+  background-color: #2e564e;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #3e5f58;
+  border-radius: 10px;
+  width: 220px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.profile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .profile img {
-  width: 100%;
+  width: 225px;
+  height: 150px;
   border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.profile p {
+  font-size: 1em;
+  color: #b0b0b0;
 }
